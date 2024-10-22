@@ -1,4 +1,3 @@
-import { Coins, Trophy } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const CoinSide = ({ side }: { side: 'heads' | 'tails' }) => (

@@ -1,4 +1,4 @@
-import { Hand, Scroll, Scissors, Coins, Shuffle, Trophy } from "lucide-react"
+import { Hand, Scroll, Scissors } from "lucide-react"
 const RPSIcon = ({choice}: {choice:string}) => {
     switch (choice) {
       case 'rock':

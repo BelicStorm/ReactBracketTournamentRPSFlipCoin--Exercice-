@@ -69,11 +69,6 @@ const Tournament = () => {
     }
 
     const isMatchDecided = (match: string[]) => match[0] === match[1] && match[0] !== "TBD"
-    const reset = () => {
-        setBracket([])
-        setNewTeam("")
-        setTeams([])
-    }
 
     return (
         <div className="container mx-auto p-4">
