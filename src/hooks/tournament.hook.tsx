@@ -69,6 +69,11 @@ const Tournament = () => {
     }
 
     const isMatchDecided = (match: string[]) => match[0] === match[1] && match[0] !== "TBD"
+    const reset = () => {
+        setBracket([])
+        setNewTeam("")
+        setTeams([])
+    }
 
     return (
         <div className="container mx-auto p-4">
@@ -104,6 +109,9 @@ const Tournament = () => {
             </div>
             <Button onClick={randomizeBracket} className="mb-4" variant="outline">
                 Randomize Bracket
+            </Button>
+            <Button onClick={reset} className="mb-4" variant="outline">
+                Reset Bracket
             </Button>
             {bracket.length > 0 && (
                 <div className="overflow-x-auto">
